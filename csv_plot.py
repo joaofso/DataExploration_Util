@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!python
 
 from argparse import ArgumentParser
 import sys
@@ -22,7 +22,7 @@ def get_command_parser():
     parser.add_argument('-sep', '--separator', dest='separator', default=';',
                         help='separator used as field delimiter of the CSV files (\';\' is the default separator)')
 
-    parser.add_argument('-l', '--list-columns', dest='list', default=False,
+    parser.add_argument('-l', '--list-columns', dest='list', action='store_true',
                         help='prints a list of columns available to be plotted')
 
     parser.add_argument('-f', '--save_file', dest='out', help='saves the graphs in a file')
@@ -85,7 +85,11 @@ def generate_plots(args):
 if __name__ == '__main__':
     try:
         arguments = check_parameters()
-        generate_plots(arguments)
+        if arguments.list:
+            dataframe = pandas.read_csv(arguments.file, sep=arguments.separator)
+            print(dataframe.columns.tolist())
+        else:
+            generate_plots(arguments)
         sys.exit(0)
     except Exception as ex:
         print(ex)

@@ -11,13 +11,13 @@ from pandas.errors import ParserError
 def get_command_parser():
     parser = ArgumentParser(description='Plots the desired graphs based on the information from the provided csv file.')
     # positional arguments
-    parser.add_argument('file', help='location of the CSV file')
+    parser.add_argument('file', type=str, help='location of the CSV file')
 
     parser.add_argument('-x', '--x-axis', nargs='*', dest='x', default=[],
-                        help='list of columns to be considered as x-axis')
+                        help='list of columns to be considered as x-axis for scatter plots and samples for the boxplots')
 
     parser.add_argument('-y', '--y-axis', nargs='*', dest='y', default=[],
-                        help='list of columns to be considered as y-axis')
+                        help='list of columns to be considered as y-axis for scatter plots')
 
     parser.add_argument('-sep', '--separator', dest='separator', default=';',
                         help='separator used as field delimiter of the CSV files (\';\' is the default separator)')
@@ -26,12 +26,14 @@ def get_command_parser():
                         help='prints a list of columns available to be plotted')
 
     parser.add_argument('-f', '--save_file', dest='out', help='saves the graphs in a file')
+
+    parser.add_argument('-g', '--graph', dest='graph', choices=['scatter', 'box'], default='scatter')
     return parser
 
 
-def check_parameters():
+def check_parameters(parameters):
     parameter_parser = get_command_parser()
-    args = parameter_parser.parse_args()
+    args = parameter_parser.parse_args(parameters)
 
     if not args.file:
         raise Exception('File not present. Provide an input file.')
@@ -43,9 +45,7 @@ def check_parameters():
         raise Exception('The provided file is not a csv.')
 
     if not args.list:
-        if not args.x:
-            raise Exception('Provide a list of column to be considered as x-axis')
-        if args.y:
+        if args.graph is 'scatter' and not args.y:
             raise Exception('Provide a list of column to be considered as y-axis')
 
     if args.out and not args.out.endswith('.png'):
@@ -57,34 +57,60 @@ def is_csv(file_path):
     return file_path.endswith('.csv')
 
 
-def generate_plots(args):
+def plot_scatter(args):
     try:
         dataframe = pandas.read_csv(args.file, sep=args.separator)
-        for field in set(args.x, args.y):
+        for field in set(args.x + args.y):
             if field not in dataframe.columns:
                 raise Exception('The column {} is not present in the provided csv file'.format(field))
 
-        number_graphs = len(args.x) * len(args.y)
-        current_graph = 0
-        figure, graphs = plot.subplots(nrows=number_graphs)
+        if not args.x:
+            args.x = ['fake_column']
+            r = range(0, len(dataframe.iloc[:, 0]))
+            dataframe['fake_column'] = r
 
-        for x in args.x:
-            for y in args.y:
+        figure, graphs = plot.subplots(nrows=len(args.y), ncols=len(args.x), squeeze=False, sharex='col', sharey='row')
+
+        for index_x, x in enumerate(args.x):
+            for index_y, y in enumerate(args.y):
                 x_sample = dataframe[x]
                 y_sample = dataframe[y]
-                graphs[current_graph].scatter(x=x_sample, y=y_sample)
-                graphs[current_graph].xlabel(x)
-                graphs[current_graph].ylabel(y)
-                current_graph += 1
-
+                graphs[index_y, index_x].scatter(x=x_sample, y=y_sample)
+                graphs[index_y, index_x].set_xlabel(x if x is not 'fake_column' else '')
+                graphs[index_y, index_x].set_ylabel(y)
         plot.show()
-
     except ParserError as exc:
         print('The provided separator {} is incompatible with the provided file'.format(args.separator))
 
+
+def plot_boxplot(args):
+    try:
+        dataframe = pandas.read_csv(args.file, sep=args.separator)
+        for field in args.x:
+            if field not in dataframe.columns:
+                raise Exception('The column {} is not present in the provided csv file'.format(field))
+
+        figure, graphs = plot.subplots(ncols=len(args.x))
+
+        for index_x, x in enumerate(args.x):
+            x_sample = dataframe[x]
+            graphs[index_x].boxplot(x_sample)
+            graphs[index_x].set_xlabel(x)
+        plot.show()
+    except ParserError as exc:
+        print('The provided separator {} is incompatible with the provided file'.format(args.separator))
+
+
+def generate_plots(args):
+    if args.graph == 'scatter':
+        plot_scatter(args)
+    elif args.graph == 'box':
+        plot_boxplot(args)
+
+
 if __name__ == '__main__':
     try:
-        arguments = check_parameters()
+        arguments = check_parameters(sys.argv[1:])
         if arguments.list:
             dataframe = pandas.read_csv(arguments.file, sep=arguments.separator)
             print(dataframe.columns.tolist())

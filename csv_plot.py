@@ -59,7 +59,7 @@ def is_csv(file_path):
 
 def plot_scatter(args):
     try:
-        dataframe = pandas.read_csv(args.file, sep=args.separator)
+        dataframe = pandas.read_csv(args.file, sep=args.separator, engine='python')
         for field in set(args.x + args.y):
             if field not in dataframe.columns:
                 raise Exception('The column {} is not present in the provided csv file'.format(field))
@@ -77,6 +77,8 @@ def plot_scatter(args):
                 y_sample = dataframe[y]
                 graphs[index_y, index_x].scatter(x=x_sample, y=y_sample)
                 graphs[index_y, index_x].set_xlabel(x if x is not 'fake_column' else '')
+                for tick_marks in graphs[index_y, index_x].get_xticklabels():
+                    tick_marks.set_rotation(45)
                 graphs[index_y, index_x].set_ylabel(y)
         plot.show()
     except ParserError as exc:
@@ -112,7 +114,7 @@ if __name__ == '__main__':
     try:
         arguments = check_parameters(sys.argv[1:])
         if arguments.list:
-            dataframe = pandas.read_csv(arguments.file, sep=arguments.separator)
+            dataframe = pandas.read_csv(arguments.file, sep=arguments.separator, engine='python')
             print(dataframe.columns.tolist())
         else:
             generate_plots(arguments)

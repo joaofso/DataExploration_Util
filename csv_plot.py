@@ -11,7 +11,7 @@ from pandas.errors import ParserError
 def get_command_parser():
     parser = ArgumentParser(description='Plots the desired graphs based on the information from the provided csv file.')
     # positional arguments
-    parser.add_argument('file', type=str, help='location of the CSV file')
+    parser.add_argument('file', type=str, nargs='?', help='location of the CSV file')
 
     parser.add_argument('-x', '--x-axis', nargs='*', dest='x', default=[],
                         help='list of columns to be considered as x-axis for scatter plots and samples for the boxplots')
@@ -35,14 +35,11 @@ def check_parameters(parameters):
     parameter_parser = get_command_parser()
     args = parameter_parser.parse_args(parameters)
 
+    if not args.file and not sys.stdin.isatty():
+        args.file = sys.stdin
+
     if not args.file:
         raise Exception('File not present. Provide an input file.')
-
-    if not os.path.exists(args.file):
-        raise Exception('The provided file does not exist.')
-
-    if not is_csv(args.file):
-        raise Exception('The provided file is not a csv.')
 
     if not args.list:
         if args.graph is 'scatter' and not args.y:
@@ -51,10 +48,6 @@ def check_parameters(parameters):
     if args.out and not args.out.endswith('.png'):
         args.out = args.out + '.png'
     return args
-
-
-def is_csv(file_path):
-    return file_path.endswith('.csv')
 
 
 def plot_scatter(args):

@@ -50,9 +50,15 @@ def check_parameters(parameters):
     return args
 
 
+def clean_dataframe_header(df: pandas.DataFrame):
+    df.columns = list(map(str.strip, df.columns))
+
+
 def plot_scatter(args):
     try:
         dataframe = pandas.read_csv(args.file, sep=args.separator, engine='python')
+        clean_dataframe_header(dataframe)
+
         for field in set(args.x + args.y):
             if field not in dataframe.columns:
                 raise Exception('The column {} is not present in the provided csv file'.format(field))

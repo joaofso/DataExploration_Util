@@ -2,7 +2,6 @@
 
 from argparse import ArgumentParser
 import sys
-import os
 import pandas
 import matplotlib.pyplot as plot
 from pandas.errors import ParserError
@@ -31,7 +30,7 @@ def get_command_parser():
     return parser
 
 
-def check_parameters(parameters):
+def check_parameters(parameters: str):
     parameter_parser = get_command_parser()
     args = parameter_parser.parse_args(parameters)
 
@@ -42,7 +41,7 @@ def check_parameters(parameters):
         raise Exception('File not present. Provide an input file.')
 
     if not args.list:
-        if args.graph is 'scatter' and not args.y:
+        if args.graph == 'scatter' and not args.y:
             raise Exception('Provide a list of column to be considered as y-axis')
 
     if args.out and not args.out.endswith('.png'):
@@ -54,9 +53,26 @@ def clean_dataframe_header(df: pandas.DataFrame):
     df.columns = list(map(str.strip, df.columns))
 
 
-def plot_scatter(args):
+def check_sample_types(sample: pandas.Series):
+    if sample.dtype == object:
+        return cast_to_timestamp(sample)
+    else:
+        return sample
+
+
+def cast_to_timestamp(sample: pandas.Series):
+    timestamp_templates = ['%Y-%m-%dT%H:%M', '%Y-%m-%dT%H:%M:%S', '%m/%d/%Y %H:%M:%S %p']
+    for t in timestamp_templates:
+        try:
+            return pandas.to_datetime(sample, format=t, exact=False)
+        except ValueError as er:
+            pass
+    return sample
+
+
+def plot_scatter(args: dict):
     try:
-        dataframe = pandas.read_csv(args.file, sep=args.separator, engine='python')
+        dataframe = pandas.read_csv(args.file, sep=args.separator, engine='python', parse_dates=True)
         clean_dataframe_header(dataframe)
 
         for field in set(args.x + args.y):
@@ -72,19 +88,21 @@ def plot_scatter(args):
 
         for index_x, x in enumerate(args.x):
             for index_y, y in enumerate(args.y):
-                x_sample = dataframe[x]
-                y_sample = dataframe[y]
+                x_sample = check_sample_types(dataframe[x])
+                y_sample = check_sample_types(dataframe[y])
                 graphs[index_y, index_x].scatter(x=x_sample, y=y_sample)
-                graphs[index_y, index_x].set_xlabel(x if x is not 'fake_column' else '')
-                for tick_marks in graphs[index_y, index_x].get_xticklabels():
-                    tick_marks.set_rotation(45)
+                graphs[index_y, index_x].set_xlabel(x if x != 'fake_column' else '')
+                if x == 'fake_column':
+                    graphs[index_y, index_x].tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
+#                for tick_marks in graphs[index_y, index_x].get_xticklabels():
+#                    tick_marks.set_rotation(90)
                 graphs[index_y, index_x].set_ylabel(y)
         plot.show()
     except ParserError as exc:
         print('The provided separator {} is incompatible with the provided file'.format(args.separator))
 
 
-def plot_boxplot(args):
+def plot_boxplot(args: dict):
     try:
         dataframe = pandas.read_csv(args.file, sep=args.separator)
         for field in args.x:
@@ -102,7 +120,7 @@ def plot_boxplot(args):
         print('The provided separator {} is incompatible with the provided file'.format(args.separator))
 
 
-def generate_plots(args):
+def generate_plots(args: dict):
     if args.graph == 'scatter':
         plot_scatter(args)
     elif args.graph == 'box':

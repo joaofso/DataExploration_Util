@@ -1,0 +1,1642 @@
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_pod_network_data_in.csv
+              value
+count  2.041000e+03
+mean   1.678803e+07
+std    1.596726e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    1.799009e+07
+99%    5.021285e+07
+max    5.060749e+07
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_pod_network_data_in_errors.csv
+        value
+count  2041.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_pod_network_data_out.csv
+              value
+count  2.041000e+03
+mean   1.619740e+07
+std    2.880162e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    2.446641e+06
+99%    9.347689e+07
+max    9.638512e+07
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_pod_network_data_out_errors.csv
+        value
+count  2041.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_container_cpu.csv
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  8.571816  ...  9.411173  9.411173
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  4.033697  ...  4.794736  4.805757
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  4.235517  ...  5.216591  5.216591
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  5.105263  ...  6.031686  6.031686
+eric-bss-cil-rate-858c6bc98f-87kcf     258.0  1.736739  ...  1.922172  1.926813
+
+[5 rows x 8 columns]
+            value                      ...                              
+            count      mean       std  ...       50%       99%       max
+container                              ...                              
+cassandra  1032.0  5.486573  2.262928  ...  4.890959  9.386386  9.411173
+cilrate     258.0  1.736739  0.416869  ...  1.862136  1.922172  1.926813
+
+[2 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_container_memory_ws.csv
+              value
+count  1.505000e+03
+mean   1.292790e+10
+std    6.928795e+09
+min    6.840320e+05
+1%     6.840320e+05
+50%    1.577683e+10
+99%    2.131444e+10
+max    2.229974e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_container_memory_usage.csv
+              value
+count  1.505000e+03
+mean   3.340891e+10
+std    2.046110e+10
+min    6.840320e+05
+1%     6.840320e+05
+50%    4.723328e+10
+99%    4.724464e+10
+max    4.724464e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_container_last_seem.csv
+              value
+count  3.600000e+01
+mean   1.669205e+09
+std    8.439702e+00
+min    1.669205e+09
+1%     1.669205e+09
+50%    1.669205e+09
+99%    1.669205e+09
+max    1.669205e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_disk_usage.csv
+              value
+count  1.032000e+03
+mean   8.075697e+10
+std    7.990052e+09
+min    6.019628e+10
+1%     6.254902e+10
+50%    8.155470e+10
+99%    9.638913e+10
+max    9.638913e+10
+                                               value  ...              
+                                               count  ...           max
+persistentvolumeclaim                                 ...              
+datadir-eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  9.021865e+10
+datadir-eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  8.787149e+10
+datadir-eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  9.237815e+10
+datadir-eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  9.638913e+10
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_table_disk_space.csv
+              value
+count  1.032000e+03
+mean   7.359775e+10
+std    6.535869e+09
+min    5.750589e+10
+1%     5.888601e+10
+50%    7.510834e+10
+99%    8.433832e+10
+max    8.459286e+10
+                                       value  ...              
+                                       count  ...           max
+pod                                           ...              
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  7.927805e+10
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  8.041822e+10
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  8.049680e+10
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  8.459286e+10
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_compaction_rate.csv
+              value
+count  1.032000e+03
+mean   2.774718e+08
+std    1.742535e+08
+min    0.000000e+00
+1%     0.000000e+00
+50%    2.840117e+08
+99%    6.002809e+08
+max    7.080764e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_compaction_data.csv
+             value
+count  1032.000000
+mean      0.701550
+std       0.939528
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       4.000000
+max       5.000000
+                                       value            ...           
+                                       count      mean  ...   99%  max
+pod                                                     ...           
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.670543  ...  3.00  3.0
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.655039  ...  3.00  3.0
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.631783  ...  4.00  4.0
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.848837  ...  4.43  5.0
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_overload_protection.csv
+               value
+count    4128.000000
+mean    11117.000873
+std     54617.453442
+min         0.000000
+1%          0.000000
+50%         0.000000
+99%    317099.132847
+max    481267.502170
+                                                 value  ...              
+                                                 count  ...           max
+pod                                   mechanism         ...              
+eric-bss-cil-database-cd-cil1-rack1-0 disk       258.0  ...       0.00000
+                                      inbound    258.0  ...  481267.50217
+                                      open_file  258.0  ...       0.00000
+                                      sep_queue  258.0  ...       0.00000
+eric-bss-cil-database-cd-cil1-rack2-0 disk       258.0  ...       0.00000
+                                      inbound    258.0  ...       0.00000
+                                      open_file  258.0  ...       0.00000
+                                      sep_queue  258.0  ...       0.00000
+eric-bss-cil-database-cd-cil1-rack3-0 disk       258.0  ...       0.00000
+                                      inbound    258.0  ...       0.00000
+                                      open_file  258.0  ...       0.00000
+                                      sep_queue  258.0  ...       0.00000
+eric-bss-cil-database-cd-cil1-rack4-0 disk       258.0  ...       0.00000
+                                      inbound    258.0  ...       0.00000
+                                      open_file  258.0  ...       0.00000
+                                      sep_queue  258.0  ...       0.00000
+
+[16 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_w_latency_p99.csv
+             value
+count  1032.000000
+mean      0.001902
+std       0.003318
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.008409
+max       0.008409
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.007608  ...  0.008409  0.008409
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.000000  0.000000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_w_latency_p50.csv
+             value
+count  1032.000000
+mean      0.000301
+std       0.000530
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.001358
+max       0.001630
+                                       value            ...                  
+                                       count      mean  ...      99%      max
+pod                                                     ...                  
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.001205  ...  0.00163  0.00163
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.00000  0.00000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.00000  0.00000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.00000  0.00000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_r_latency_p99.csv
+             value
+count  1032.000000
+mean      0.016725
+std       0.019552
+min       0.000655
+1%        0.000835
+50%       0.007008
+99%       0.052066
+max       0.107965
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.044628  ...  0.052066  0.052066
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.004117  ...  0.012109  0.014531
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.008665  ...  0.107965  0.107965
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.009490  ...  0.036157  0.036157
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_r_latency_p50.csv
+             value
+count  1032.000000
+mean      0.001076
+std       0.000606
+min       0.000455
+1%        0.000546
+50%       0.000786
+99%       0.002347
+max       0.003379
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.001978  ...  0.002347  0.002816
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000798  ...  0.002347  0.002816
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000677  ...  0.000943  0.000943
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000851  ...  0.001956  0.003379
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_jvm_commited_memory.csv
+              value
+count  8.256000e+03
+mean   1.361855e+09
+std    2.258736e+09
+min    2.555904e+06
+1%     2.555904e+06
+50%    3.964928e+07
+99%    6.551503e+09
+max    1.017119e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_jvm_used_memory.csv
+              value
+count  8.256000e+03
+mean   5.817450e+08
+std    1.098305e+09
+min    1.525504e+06
+1%     1.525504e+06
+50%    3.622886e+07
+99%    4.240441e+09
+max    5.544870e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cassandra_gc_collection_duration_second.csv
+             value
+count  2064.000000
+mean      0.274618
+std       0.315605
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.875444
+max       1.061929
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cilrate_requests.csv
+              value
+count    774.000000
+mean   10217.611447
+std     7398.639754
+min        0.000000
+1%         0.000000
+50%    15567.866667
+99%    15649.856000
+max    15686.066667
+           value                ...                            
+           count          mean  ...           99%           max
+operation                       ...                            
+get        258.0  15326.473289  ...  15654.533333  15681.000000
+put        258.0      0.000000  ...      0.000000      0.000000
+putBatch   258.0  15326.361051  ...  15654.333333  15686.066667
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cilrate_failures.csv
+             value
+count   774.000000
+mean    957.332723
+std    1560.646325
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%    5941.925333
+max    6983.400000
+           value               ...                          
+           count         mean  ...          99%          max
+operation                      ...                          
+get        258.0  1541.038019  ...  6897.066667  6983.400000
+put        258.0     0.000000  ...     0.000000     0.000000
+putBatch   258.0  1330.960152  ...  5917.733333  6007.333333
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cilrate_latency_p50.csv
+            value
+count  508.000000
+mean     0.007204
+std      0.004798
+min      0.001599
+1%       0.001668
+50%      0.006353
+99%      0.019442
+max      0.020850
+           value                      ...                             
+           count      mean       std  ...       50%       99%      max
+operation                             ...                             
+get        254.0  0.007771  0.004972  ...  0.006754  0.019971  0.02085
+put          0.0       NaN       NaN  ...       NaN       NaN      NaN
+putBatch   254.0  0.006636  0.004558  ...  0.005578  0.018752  0.01946
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-1k/mixedRandom-30MKeys-1k_cilrate_latency_p99.csv
+            value
+count  508.000000
+mean     0.250706
+std      0.056705
+min      0.126967
+1%       0.131176
+50%      0.247377
+99%      0.355580
+max      0.357842
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        254.0  0.252494  0.056830  ...  0.250800  0.357841  0.357842
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   254.0  0.248919  0.056636  ...  0.245179  0.353690  0.353691
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_pod_network_data_in.csv
+              value
+count  2.036000e+03
+mean   2.541272e+07
+std    2.275285e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    2.711180e+07
+99%    6.751808e+07
+max    6.768853e+07
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_pod_network_data_in_errors.csv
+        value
+count  2036.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_pod_network_data_out.csv
+              value
+count  2.036000e+03
+mean   2.444380e+07
+std    4.473868e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    2.960869e+06
+99%    1.378258e+08
+max    1.385506e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_pod_network_data_out_errors.csv
+        value
+count  2036.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_container_cpu.csv
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  8.296598  ...  9.144436  9.196645
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  4.231849  ...  4.942185  5.045496
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  4.446095  ...  5.118571  5.383320
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  5.138656  ...  5.883133  5.981206
+eric-bss-cil-rate-858c6bc98f-87kcf     258.0  1.383574  ...  1.512522  1.512522
+
+[5 rows x 8 columns]
+            value                      ...                              
+            count      mean       std  ...       50%       99%       max
+container                              ...                              
+cassandra  1032.0  5.528299  2.138911  ...  5.020722  9.119806  9.196645
+cilrate     258.0  1.383574  0.346565  ...  1.488760  1.512522  1.512522
+
+[2 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_container_memory_ws.csv
+              value
+count  1.505000e+03
+mean   1.175724e+10
+std    6.084337e+09
+min    6.840320e+05
+1%     6.881280e+05
+50%    1.454439e+10
+99%    1.777791e+10
+max    1.801835e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_container_memory_usage.csv
+              value
+count  1.505000e+03
+mean   3.325238e+10
+std    2.047843e+10
+min    6.840320e+05
+1%     6.881280e+05
+50%    4.721467e+10
+99%    4.724464e+10
+max    4.724464e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_container_last_seem.csv
+              value
+count  3.600000e+01
+mean   1.669210e+09
+std    8.439702e+00
+min    1.669210e+09
+1%     1.669210e+09
+50%    1.669210e+09
+99%    1.669210e+09
+max    1.669210e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_disk_usage.csv
+              value
+count  1.032000e+03
+mean   8.915982e+10
+std    6.637477e+09
+min    7.360500e+10
+1%     7.360503e+10
+50%    8.832502e+10
+99%    1.033306e+11
+max    1.037383e+11
+                                               value  ...              
+                                               count  ...           max
+persistentvolumeclaim                                 ...              
+datadir-eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  9.639231e+10
+datadir-eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  9.537409e+10
+datadir-eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  9.794732e+10
+datadir-eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  1.037383e+11
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_table_disk_space.csv
+              value
+count  1.032000e+03
+mean   8.094131e+10
+std    4.165723e+09
+min    6.894012e+10
+1%     7.076044e+10
+50%    8.154393e+10
+99%    8.804928e+10
+max    8.950961e+10
+                                       value  ...              
+                                       count  ...           max
+pod                                           ...              
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  8.085400e+10
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  8.352181e+10
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  8.461977e+10
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  8.950961e+10
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_compaction_rate.csv
+              value
+count  1.032000e+03
+mean   4.109326e+08
+std    1.466538e+08
+min    0.000000e+00
+1%     0.000000e+00
+50%    3.974356e+08
+99%    6.564410e+08
+max    6.796386e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_compaction_data.csv
+             value
+count  1032.000000
+mean      1.262597
+std       1.312418
+min       0.000000
+1%        0.000000
+50%       1.000000
+99%       5.000000
+max       6.000000
+                                       value            ...           
+                                       count      mean  ...   99%  max
+pod                                                     ...           
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  1.182171  ...  5.00  5.0
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  1.228682  ...  5.00  6.0
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  1.189922  ...  4.00  4.0
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  1.449612  ...  4.43  5.0
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_overload_protection.csv
+              value
+count   4128.000000
+mean     964.012020
+std     5039.158437
+min        0.000000
+1%         0.000000
+50%        0.000000
+99%    29975.332785
+max    52762.666667
+                                                 value  ...              
+                                                 count  ...           max
+pod                                   mechanism         ...              
+eric-bss-cil-database-cd-cil1-rack1-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...  52762.666667
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack2-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack3-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack4-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+
+[16 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_w_latency_p99.csv
+             value
+count  1032.000000
+mean      0.002148
+std       0.003744
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.010091
+max       0.010091
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.008593  ...  0.010091  0.010091
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.000000  0.000000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_w_latency_p50.csv
+             value
+count  1032.000000
+mean      0.000279
+std       0.000491
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.001358
+max       0.001358
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.001117  ...  0.001358  0.001358
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.000000  0.000000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_r_latency_p99.csv
+             value
+count  1032.000000
+mean      0.019325
+std       0.023379
+min       0.000786
+1%        0.000943
+50%       0.005840
+99%       0.062480
+max       0.062480
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.057392  ...  0.062480  0.062480
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.005457  ...  0.062480  0.062480
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.005466  ...  0.012109  0.012109
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.008985  ...  0.036157  0.036157
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_r_latency_p50.csv
+             value
+count  1032.000000
+mean      0.001059
+std       0.000623
+min       0.000455
+1%        0.000546
+50%       0.000655
+99%       0.002347
+max       0.002347
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.002057  ...  0.002347  0.002347
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000715  ...  0.001358  0.001358
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000726  ...  0.001630  0.001956
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000737  ...  0.001956  0.002347
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_jvm_commited_memory.csv
+              value
+count  8.256000e+03
+mean   1.362086e+09
+std    2.281034e+09
+min    2.555904e+06
+1%     2.555904e+06
+50%    3.964928e+07
+99%    6.991905e+09
+max    1.017119e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_jvm_used_memory.csv
+              value
+count  8.256000e+03
+mean   6.254812e+08
+std    1.148702e+09
+min    0.000000e+00
+1%     1.525504e+06
+50%    3.618650e+07
+99%    4.202575e+09
+max    5.305795e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cassandra_gc_collection_duration_second.csv
+             value
+count  2064.000000
+mean      0.287121
+std       0.315099
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.896138
+max       0.940000
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cilrate_requests.csv
+              value
+count    774.000000
+mean    7712.447734
+std     5584.672368
+min        0.000000
+1%         0.000000
+50%    11750.966667
+99%    11846.722667
+max    11899.133333
+           value                ...                            
+           count          mean  ...           99%           max
+operation                       ...                            
+get        258.0  11568.729811  ...  11870.666667  11899.133333
+put        258.0      0.000000  ...      0.000000      0.000000
+putBatch   258.0  11568.613391  ...  11871.600000  11898.800000
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cilrate_failures.csv
+             value
+count   774.000000
+mean     81.751222
+std     194.261805
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%     819.235333
+max    1103.000000
+           value                                                            
+           count        mean         std  min   1%  50%     99%          max
+operation                                                                   
+get        258.0  130.209509  241.276516  0.0  0.0  0.0  1016.4  1103.000000
+put        258.0    0.000000    0.000000  0.0  0.0  0.0     0.0     0.000000
+putBatch   258.0  115.044155  212.398036  0.0  0.0  0.0   884.4  1000.866667
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cilrate_latency_p50.csv
+            value
+count  508.000000
+mean     0.004218
+std      0.002093
+min      0.001410
+1%       0.001610
+50%      0.003904
+99%      0.009323
+max      0.013768
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        254.0  0.004814  0.002222  ...  0.004702  0.009519  0.013768
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   254.0  0.003622  0.001770  ...  0.003403  0.007525  0.009979
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-2k/mixedRandom-30MKeys-2k_cilrate_latency_p99.csv
+            value
+count  508.000000
+mean     0.200457
+std      0.044686
+min      0.094795
+1%       0.111643
+50%      0.194858
+99%      0.311824
+max      0.313758
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        254.0  0.202781  0.044371  ...  0.195944  0.313729  0.313758
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   254.0  0.198133  0.044966  ...  0.193156  0.311805  0.311825
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_pod_network_data_in.csv
+              value
+count  2.058000e+03
+mean   4.272000e+07
+std    3.837234e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    4.657084e+07
+99%    1.115789e+08
+max    1.119208e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_pod_network_data_in_errors.csv
+        value
+count  2058.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_pod_network_data_out.csv
+              value
+count  2.058000e+03
+mean   4.100802e+07
+std    7.675038e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    4.079668e+06
+99%    2.372366e+08
+max    2.376076e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_pod_network_data_out_errors.csv
+        value
+count  2058.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_container_cpu.csv
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  8.707051  ...  9.414708  9.420313
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  4.999037  ...  5.443899  5.451590
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  5.231645  ...  5.716754  5.716754
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  5.644493  ...  6.139796  6.142672
+eric-bss-cil-rate-858c6bc98f-87kcf     258.0  1.471108  ...  1.595576  1.599906
+
+[5 rows x 8 columns]
+            value                      ...                              
+            count      mean       std  ...       50%       99%       max
+container                              ...                              
+cassandra  1032.0  6.145557  2.151172  ...  5.682947  9.413923  9.420313
+cilrate     258.0  1.471108  0.351675  ...  1.585605  1.595576  1.599906
+
+[2 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_container_memory_ws.csv
+              value
+count  1.524000e+03
+mean   9.685165e+09
+std    4.805731e+09
+min    6.881280e+05
+1%     6.881280e+05
+50%    1.241790e+10
+99%    1.362233e+10
+max    1.372573e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_container_memory_usage.csv
+              value
+count  1.524000e+03
+mean   3.294569e+10
+std    2.066148e+10
+min    6.881280e+05
+1%     6.881280e+05
+50%    4.721558e+10
+99%    4.724464e+10
+max    4.724464e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_container_last_seem.csv
+              value
+count  3.600000e+01
+mean   1.669215e+09
+std    8.439702e+00
+min    1.669215e+09
+1%     1.669215e+09
+50%    1.669215e+09
+99%    1.669215e+09
+max    1.669215e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_disk_usage.csv
+              value
+count  1.032000e+03
+mean   1.038114e+11
+std    6.074209e+09
+min    8.476282e+10
+1%     8.476282e+10
+50%    1.046252e+11
+99%    1.172135e+11
+max    1.188807e+11
+                                               value  ...              
+                                               count  ...           max
+persistentvolumeclaim                                 ...              
+datadir-eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  1.116843e+11
+datadir-eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  1.069096e+11
+datadir-eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  1.084379e+11
+datadir-eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  1.188807e+11
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_table_disk_space.csv
+              value
+count  1.032000e+03
+mean   8.744288e+10
+std    3.315049e+09
+min    7.988100e+10
+1%     8.142660e+10
+50%    8.671769e+10
+99%    9.363136e+10
+max    9.445530e+10
+                                       value  ...              
+                                       count  ...           max
+pod                                           ...              
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  8.535140e+10
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  8.800801e+10
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  8.901350e+10
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  9.445530e+10
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_compaction_rate.csv
+              value
+count  1.032000e+03
+mean   5.716693e+08
+std    1.116556e+08
+min    0.000000e+00
+1%     0.000000e+00
+50%    5.850279e+08
+99%    7.473335e+08
+max    8.040357e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_compaction_data.csv
+             value
+count  1032.000000
+mean      5.495155
+std       2.990768
+min       0.000000
+1%        0.000000
+50%       5.000000
+99%      13.000000
+max      16.000000
+                                       value            ...             
+                                       count      mean  ...    99%   max
+pod                                                     ...             
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  4.612403  ...  12.00  12.0
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  5.174419  ...  11.86  13.0
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  5.201550  ...  12.00  12.0
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  6.992248  ...  13.00  16.0
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_overload_protection.csv
+              value
+count   4128.000000
+mean     676.696690
+std     3635.588590
+min        0.000000
+1%         0.000000
+50%        0.000000
+99%    22110.050690
+max    36367.474833
+                                                 value  ...              
+                                                 count  ...           max
+pod                                   mechanism         ...              
+eric-bss-cil-database-cd-cil1-rack1-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...  36367.474833
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack2-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack3-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack4-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+
+[16 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_w_latency_p99.csv
+             value
+count  1032.000000
+mean      0.002169
+std       0.003822
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.012109
+max       0.014531
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.008677  ...  0.014531  0.014531
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.000000  0.000000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_w_latency_p50.csv
+             value
+count  1032.000000
+mean      0.000396
+std       0.000692
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.001630
+max       0.001630
+                                       value            ...                  
+                                       count      mean  ...      99%      max
+pod                                                     ...                  
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.001585  ...  0.00163  0.00163
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.00000  0.00000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.00000  0.00000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.00000  0.00000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_r_latency_p99.csv
+             value
+count  1032.000000
+mean      0.016901
+std       0.023986
+min       0.000786
+1%        0.000943
+50%       0.004866
+99%       0.074976
+max       0.089971
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.046894  ...  0.074976  0.089971
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.002928  ...  0.008409  0.008409
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.007658  ...  0.036157  0.036157
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.010122  ...  0.036157  0.036157
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_r_latency_p50.csv
+             value
+count  1032.000000
+mean      0.001327
+std       0.000720
+min       0.000455
+1%        0.000655
+50%       0.000943
+99%       0.002816
+max       0.003379
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.002400  ...  0.002816  0.002816
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000861  ...  0.001630  0.001630
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.001112  ...  0.003058  0.003379
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000934  ...  0.002140  0.002816
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_jvm_commited_memory.csv
+              value
+count  8.256000e+03
+mean   1.362278e+09
+std    2.269650e+09
+min    2.555904e+06
+1%     2.555904e+06
+50%    3.925606e+07
+99%    6.408477e+09
+max    1.017119e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_jvm_used_memory.csv
+              value
+count  8.256000e+03
+mean   6.702762e+08
+std    1.169627e+09
+min    1.525504e+06
+1%     1.525504e+06
+50%    3.550042e+07
+99%    4.139778e+09
+max    5.087691e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cassandra_gc_collection_duration_second.csv
+             value
+count  2062.000000
+mean      0.305559
+std       0.317384
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.802191
+max       0.965678
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cilrate_requests.csv
+              value
+count    774.000000
+mean    6912.856032
+std     4979.565291
+min        0.000000
+1%         0.000000
+50%    10498.333333
+99%    10571.266667
+max    10591.133333
+           value                ...                            
+           count          mean  ...           99%           max
+operation                       ...                            
+get        258.0  10369.365548  ...  10574.266667  10589.733333
+put        258.0      0.000000  ...      0.000000      0.000000
+putBatch   258.0  10369.202548  ...  10568.933333  10591.133333
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cilrate_failures.csv
+            value
+count  774.000000
+mean    59.898639
+std    123.744949
+min      0.000000
+1%       0.000000
+50%      0.000000
+99%    512.827333
+max    656.266667
+           value                                                              
+           count       mean         std  min   1%  50%         99%         max
+operation                                                                     
+get        258.0  95.333205  151.162767  0.0  0.0  0.0  580.200000  656.266667
+put        258.0   0.000000    0.000000  0.0  0.0  0.0    0.000000    0.000000
+putBatch   258.0  84.362712  133.207732  0.0  0.0  0.0  502.333333  565.466667
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cilrate_latency_p50.csv
+            value
+count  510.000000
+mean     0.005481
+std      0.001108
+min      0.001581
+1%       0.001996
+50%      0.005284
+99%      0.007370
+max      0.007612
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        255.0  0.006349  0.000782  ...  0.006486  0.007397  0.007612
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   255.0  0.004612  0.000580  ...  0.004690  0.005389  0.005500
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-4k/mixedRandom-30MKeys-4k_cilrate_latency_p99.csv
+            value
+count  510.000000
+mean     0.223782
+std      0.040630
+min      0.055415
+1%       0.072089
+50%      0.221800
+99%      0.315328
+max      0.319177
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        255.0  0.226587  0.040495  ...  0.222554  0.316647  0.319177
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   255.0  0.220976  0.040651  ...  0.218983  0.312732  0.315420
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_pod_network_data_in.csv
+              value
+count  2.031000e+03
+mean   7.962730e+07
+std    7.062651e+07
+min    0.000000e+00
+1%     0.000000e+00
+50%    8.933114e+07
+99%    2.084771e+08
+max    2.086053e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_pod_network_data_in_errors.csv
+        value
+count  2031.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_pod_network_data_out.csv
+              value
+count  2.031000e+03
+mean   7.624846e+07
+std    1.409130e+08
+min    0.000000e+00
+1%     0.000000e+00
+50%    6.982462e+06
+99%    4.298458e+08
+max    4.306464e+08
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_pod_network_data_out_errors.csv
+        value
+count  2031.0
+mean      0.0
+std       0.0
+min       0.0
+1%        0.0
+50%       0.0
+99%       0.0
+max       0.0
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_container_cpu.csv
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  8.637699  ...  9.339883  9.409773
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  4.768713  ...  5.202976  5.247774
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  5.015471  ...  5.484541  5.515796
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  5.497985  ...  5.978852  6.016542
+eric-bss-cil-rate-858c6bc98f-87kcf     258.0  1.509663  ...  1.637855  1.640927
+
+[5 rows x 8 columns]
+            value                      ...                              
+            count      mean       std  ...       50%       99%       max
+container                              ...                              
+cassandra  1032.0  5.979967  2.126189  ...  5.436086  9.329115  9.409773
+cilrate     258.0  1.509663  0.358845  ...  1.623258  1.637855  1.640927
+
+[2 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_container_memory_ws.csv
+              value
+count  1.528000e+03
+mean   9.325790e+09
+std    4.546611e+09
+min    6.840320e+05
+1%     6.881280e+05
+50%    1.206974e+10
+99%    1.255707e+10
+max    1.255999e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_container_memory_usage.csv
+              value
+count  1.528000e+03
+mean   3.286898e+10
+std    2.059477e+10
+min    6.840320e+05
+1%     6.881280e+05
+50%    4.720173e+10
+99%    4.724464e+10
+max    4.724464e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_container_last_seem.csv
+              value
+count  3.600000e+01
+mean   1.669220e+09
+std    8.439702e+00
+min    1.669220e+09
+1%     1.669220e+09
+50%    1.669220e+09
+99%    1.669220e+09
+max    1.669220e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_disk_usage.csv
+              value
+count  1.032000e+03
+mean   1.456460e+11
+std    1.531162e+10
+min    1.002772e+11
+1%     1.002775e+11
+50%    1.468924e+11
+99%    1.758087e+11
+max    1.804353e+11
+                                               value  ...              
+                                               count  ...           max
+persistentvolumeclaim                                 ...              
+datadir-eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  1.616883e+11
+datadir-eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  1.618762e+11
+datadir-eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  1.664115e+11
+datadir-eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  1.804353e+11
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_table_disk_space.csv
+              value
+count  1.032000e+03
+mean   1.283132e+11
+std    1.108288e+10
+min    9.720616e+10
+1%     1.009331e+11
+50%    1.289266e+11
+99%    1.489565e+11
+max    1.507997e+11
+                                       value  ...              
+                                       count  ...           max
+pod                                           ...              
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  ...  1.300412e+11
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  ...  1.349148e+11
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  ...  1.384763e+11
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  ...  1.507997e+11
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_compaction_rate.csv
+              value
+count  1.032000e+03
+mean   5.484479e+08
+std    1.637405e+08
+min    0.000000e+00
+1%     0.000000e+00
+50%    5.461762e+08
+99%    8.894392e+08
+max    1.035207e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_compaction_data.csv
+             value
+count  1032.000000
+mean    127.036822
+std      54.513193
+min       0.000000
+1%        0.000000
+50%     140.000000
+99%     218.000000
+max     223.000000
+                                       value              ...              
+                                       count        mean  ...    99%    max
+pod                                                       ...              
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  108.976744  ...  153.0  158.0
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  119.717054  ...  170.0  170.0
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  123.655039  ...  177.0  179.0
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  155.798450  ...  222.0  223.0
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_overload_protection.csv
+              value
+count   4128.000000
+mean     187.334159
+std     1444.223823
+min        0.000000
+1%         0.000000
+50%        0.000000
+99%     6364.000000
+max    26939.265317
+                                                 value  ...              
+                                                 count  ...           max
+pod                                   mechanism         ...              
+eric-bss-cil-database-cd-cil1-rack1-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...  26939.265317
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack2-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack3-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+eric-bss-cil-database-cd-cil1-rack4-0 disk       258.0  ...      0.000000
+                                      inbound    258.0  ...      0.000000
+                                      open_file  258.0  ...      0.000000
+                                      sep_queue  258.0  ...      0.000000
+
+[16 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_w_latency_p99.csv
+             value
+count  1032.000000
+mean      0.003554
+std       0.008452
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.012109
+max       0.074976
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.014215  ...  0.074976  0.074976
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.000000  0.000000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_w_latency_p50.csv
+             value
+count  1032.000000
+mean      0.000424
+std       0.000741
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.001956
+max       0.001956
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.001695  ...  0.001956  0.001956
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.000000  ...  0.000000  0.000000
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000000  ...  0.000000  0.000000
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_r_latency_p99.csv
+             value
+count  1032.000000
+mean      0.022015
+std       0.031677
+min       0.000786
+1%        0.000786
+50%       0.008409
+99%       0.107965
+max       0.129558
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.061358  ...  0.107965  0.107965
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.005725  ...  0.014531  0.014531
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.008121  ...  0.030131  0.030131
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.012856  ...  0.129558  0.129558
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_r_latency_p50.csv
+             value
+count  1032.000000
+mean      0.002131
+std       0.002012
+min       0.000546
+1%        0.000546
+50%       0.001132
+99%       0.007008
+max       0.012109
+                                       value            ...                    
+                                       count      mean  ...       99%       max
+pod                                                     ...                    
+eric-bss-cil-database-cd-cil1-rack1-0  258.0  0.005067  ...  0.007008  0.007008
+eric-bss-cil-database-cd-cil1-rack2-0  258.0  0.000977  ...  0.002124  0.002347
+eric-bss-cil-database-cd-cil1-rack3-0  258.0  0.001496  ...  0.005840  0.012109
+eric-bss-cil-database-cd-cil1-rack4-0  258.0  0.000982  ...  0.001630  0.001630
+
+[4 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_jvm_commited_memory.csv
+              value
+count  8.256000e+03
+mean   1.362398e+09
+std    2.446989e+09
+min    2.555904e+06
+1%     2.555904e+06
+50%    3.964928e+07
+99%    7.799098e+09
+max    1.017119e+10
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_jvm_used_memory.csv
+              value
+count  8.256000e+03
+mean   6.963057e+08
+std    1.240715e+09
+min    1.525504e+06
+1%     1.525504e+06
+50%    3.490227e+07
+99%    4.442571e+09
+max    5.309482e+09
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cassandra_gc_collection_duration_second.csv
+             value
+count  2064.000000
+mean      0.387292
+std       0.396105
+min       0.000000
+1%        0.000000
+50%       0.000000
+99%       0.963936
+max       1.066000
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cilrate_requests.csv
+             value
+count   774.000000
+mean   5374.056762
+std    3891.425858
+min       0.000000
+1%        0.000000
+50%    8182.533333
+99%    8249.771333
+max    8276.600000
+           value                            ...                                  
+           count         mean          std  ...          50%          99%     max
+operation                                   ...                                  
+get        258.0  8061.070470  1014.429822  ...  8191.066667  8256.066667  8276.6
+put        258.0     0.000000     0.000000  ...     0.000000     0.000000     0.0
+putBatch   258.0  8061.099815  1014.431546  ...  8191.066667  8254.200000  8269.0
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cilrate_failures.csv
+            value
+count  774.000000
+mean    15.351418
+std     54.866283
+min      0.000000
+1%       0.000000
+50%      0.000000
+99%    262.001333
+max    490.333333
+           value                                                             
+           count       mean        std  min   1%  50%         99%         max
+operation                                                                    
+get        258.0  24.456268  70.012596  0.0  0.0  0.0  289.800000  490.333333
+put        258.0   0.000000   0.000000  0.0  0.0  0.0    0.000000    0.000000
+putBatch   258.0  21.597987  61.592327  0.0  0.0  0.0  256.133333  433.333333
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cilrate_latency_p50.csv
+            value
+count  508.000000
+mean     0.009289
+std      0.002166
+min      0.005611
+1%       0.005645
+50%      0.009171
+99%      0.015698
+max      0.016516
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        254.0  0.010899  0.001668  ...  0.010682  0.015883  0.016516
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   254.0  0.007679  0.001188  ...  0.007540  0.011102  0.011422
+
+[3 rows x 8 columns]
+
+
+/home/eourjoa/Desktop/PerformanceComparison/trial2/C4_singlesite_performance_low_performance/artifacts/mixedRandom-30MKeys-10k/mixedRandom-30MKeys-10k_cilrate_latency_p99.csv
+            value
+count  508.000000
+mean     0.198930
+std      0.033404
+min      0.134157
+1%       0.137578
+50%      0.195872
+99%      0.280481
+max      0.281245
+           value                      ...                              
+           count      mean       std  ...       50%       99%       max
+operation                             ...                              
+get        254.0  0.203699  0.033170  ...  0.199390  0.280784  0.281245
+put          0.0       NaN       NaN  ...       NaN       NaN       NaN
+putBatch   254.0  0.194161  0.033016  ...  0.189753  0.266543  0.266567
+
+[3 rows x 8 columns]
+
+

@@ -1,0 +1,8 @@
+{
+  "databaseName": "cilrate",
+  "tableName": "$NAME",
+  "rootProfile": "defaulttableprofile",
+  "tableOptions": {},
+  "createMapping": false,
+  "additionalProfiles": []
+}

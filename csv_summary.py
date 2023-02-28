@@ -51,6 +51,8 @@ def perform_summary(args):
 def calculate_metrics(df):
     summary = df.describe(include=[np.number])
     print(summary)
+    perc_99 = df.quantile(q=0.99)
+    print(f'99-quantile: {perc_99}')
 
 
 if __name__ == '__main__':

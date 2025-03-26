@@ -1,4 +1,4 @@
-from summarize_results import MetricSummaryConfig, Summarizer
+from data_exploration.summarize_results import MetricSummaryConfig, Summarizer
 
 
 confs = []

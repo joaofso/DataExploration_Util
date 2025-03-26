@@ -15,8 +15,8 @@ def get_command_parser():
     parser.add_argument('-c', '--columns', nargs='+', default=[], help='list of columns to be summarized')
     parser.add_argument('-l', '--list-columns', dest='list', action='store_true',
                         help='prints a list of columns available to be summarized')
-    parser.add_argument('-sep', '--separator', dest='separator', default=';',
-                        help='separator used as field delimiter of the CSV files (\';\' is the default separator)')
+    parser.add_argument('-sep', '--separator', dest='separator', default=',',
+                        help='separator used as field delimiter of the CSV files (\',\' is the default separator)')
     return parser
 
 

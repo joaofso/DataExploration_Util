@@ -18,7 +18,7 @@ def get_command_parser():
     parser.add_argument('-y', '--y-axis', nargs='*', dest='y', default=[],
                         help='list of columns to be considered as y-axis for scatter plots')
 
-    parser.add_argument('-sep', '--separator', dest='separator', default=';',
+    parser.add_argument('-sep', '--separator', dest='separator', default=',',
                         help='separator used as field delimiter of the CSV files (\';\' is the default separator)')
 
     parser.add_argument('-l', '--list-columns', dest='list', action='store_true',
